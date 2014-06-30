@@ -1,0 +1,21 @@
+{
+  "name": "Archi-PHP-5",
+  "version": "0.0.1",
+  "description": "Architecture applicative PHP 5 : MVC objet 1",
+  "keywords": ["PHP"],
+  "authors": [
+    "Moi"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/public/assets",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1"
+  }
+}

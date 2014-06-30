@@ -1,0 +1,12 @@
+{
+  "name": "Archi-PHP-5",
+  "version": "0.0.1",
+  "authors": [
+    "CARED 2 <cared2@ipformation-lyon.com>"
+  ],
+  "description": "Architecture applicative 5 - MVC Objet 1",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}
