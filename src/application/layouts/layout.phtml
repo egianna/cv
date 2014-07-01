@@ -27,7 +27,7 @@
                     <li <?= $this->view->isLinkActive('home')?>><a href="/home" >accueil</a></li>
                     <li <?= $this->view->isLinkActive('portfolio')?>><a href="/portfolio" >portfolio</a></li>
                     <li <?= $this->view->isLinkActive('contact')?>><a href="/contact" >contact</a></li>
-					<li><a href="img/cv Eric Gianna.pdf">Télécharger le cv en pdf</a></li>
+					<li <?= $this->view->isLinkActive('cv')?>><a href="/cv">Télécharger le cv</a></li>
 					
                 </ul>
             </nav>
