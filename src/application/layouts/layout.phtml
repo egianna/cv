@@ -10,6 +10,8 @@
         <meta name="description" content="<?= $this->view->getDescription();?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="css/accordeon.css" />
+		
         <script src="http://localhost:35729/livereload.js"></script>
     </head>
     <body>
@@ -27,8 +29,7 @@
                     <li <?= $this->view->isLinkActive('home')?>><a href="/home" >accueil</a></li>
                     <li <?= $this->view->isLinkActive('portfolio')?>><a href="/portfolio" >portfolio</a></li>
                     <li <?= $this->view->isLinkActive('contact')?>><a href="/contact" >contact</a></li>
-					<li <?= $this->view->isLinkActive('cv')?>><a href="/cv">Télécharger le cv</a></li>
-					
+					<li <?= $this->view->isLinkActive('cv')?>><a href="/cv">Télécharger le cv</a></li>	
                 </ul>
             </nav>
             <div class="clear"></div>
