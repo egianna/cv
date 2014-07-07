@@ -125,9 +125,11 @@ footer{
 
 /*:::::::::::::::::::::::::::::  presentation  ::::::::::::::::::::::::::::::*/
 
+.bas {
+	width:270px; height: 100%;
+}
 
-.presentation{
-	width:270px;
+.presentation {
 	background: -moz-linear-gradient(top, rgba(144,196,0,0.8) 0%, rgba(144,196,0,0.01) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(144,196,0,0.8)), color-stop(100%,rgba(144,196,0,0.01))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(144,196,0,0.8) 0%,rgba(144,196,0,0.01) 100%); /* Chrome10+,Safari5.1+ */
@@ -139,6 +141,8 @@ footer{
 	padding:20px;
 	line-height:1.5em;
 	margin-top:20px;
+	font-size:15px;
+	display:block
 }
 .presentation-ht{
 	width:270px;
@@ -168,8 +172,8 @@ footer{
 
 #fd_body{
 /*	background-color: #2EFE9A;
-	margin-top: 20px;*/
-	margin-bottom: 20px;	
+	margin-top: 20px;
+	margin-bottom: 20px;*/	
 }
 
 #fd_body p{
@@ -193,6 +197,7 @@ details {
 	margin:10px 0;
 	float:right;
 }
+
 summary {
 	display:inline; /* Pour les navigateurs n'implémentant pas <details> et <summary> */
 	margin-bottom:10px;
@@ -202,7 +207,6 @@ summary {
 	padding:5px 10px;
 	cursor:pointer;
 }
-
 
 details table {
 	width: auto;
@@ -297,6 +301,12 @@ progress::-moz-progress-bar {
 
 .th_larg{width: 200px;}
 
+.horizontal table {
+	border-collapse: collapse;
+	cellspacing="0";
+	cellpadding="0"; }
+
+
 /*::::::::::::::::::::::::::::::  contact  ::::::::::::::::::::::::::::::::*/
 #contact{
 	width:990px;
@@ -316,8 +326,30 @@ textarea{
 		
 }
 #envoi{
-	background:rgba(66, 67, 45, 0.5);
+	background:#42432d;
+	color: #8fc400;
+	border-radius:10px;
+	border: 1px solid #ffffff;
+	cursor:pointer;
+	width : 20%;
+	height:20x;
 }
+
+#envoi:hover{
+	background:rgba(66, 67, 45, 0.2);
+	color: #42432d;
+	border-radius:10px;
+	border: 1px solid #ffffff;
+	cursor:pointer;
+	width : 20%;
+	height:20x;
+}
+.presentation h2{
+	color: #42432d;
+}
+
+form{margin-bottom: 20px;}
+
 */
 
 /*
@@ -360,4 +392,9 @@ textarea{
 	margin-bottom:10px;
 	font-size:24px;
 }
+
+.espaceht{
+	margin-top:20px;
+}
+
 .right{text-align:right;}

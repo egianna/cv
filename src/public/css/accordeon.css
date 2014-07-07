@@ -17,29 +17,25 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 */
 
 /*Define Accordion box*/
-.accordion { width:620px; overflow:hidden; margin:20px auto; color:rgba(66, 67, 45, 0.5); background:rgba(66, 67, 45, 0.5); padding:10px; }
+.accordion { width:620px; overflow:hidden; margin:20px auto; color:rgba(66, 67, 45, 0.5);  padding:10px; }
 
 /*General Accordion****************************************************************************/
 /*Set style of open slide*/
-.accordion section:target {background:#FFF; padding:10px;}
-.accordion section:target:hover {background:#FFF; }
-.accordion section:target h2 {width:100%;}
-.accordion section:target h2 a{ color:#8fc400; padding:5px;}
-.accordion section:target li {display:block;padding-left:40px;line-height:1.5em;}
-.accordion section h2 a{padding:20px 10px;display:block; font-size:18px; font-weight:normal;color:#FFF; text-decoration:none; }
+.accordion section:target {background:transparent; padding:10px;}
+.accordion section:target:hover {background:transparent; }
+.accordion section:target h2 {width:94.5%; background:rgba(66, 67, 45, 0.4); margin-left:40px;}
+.accordion section:target h2 a{ color:#8fc400; padding:18px 5px 5px 10px;}
+.accordion section:target li {display:block; padding-left:40px; line-height:1.5em;}
+.accordion section h2 a{padding:27px 10px;display:block; font-size:18px; font-weight:normal;color:#FFF; text-decoration:none; }
 
 /*set style of closed slide*/
 .accordion section{float:left;	overflow:hidden; color:#42432d; cursor:pointer; background:#42432d; margin:3px;}
-.accordion section:hover {background:#444;}
-.accordion section li { display:none; font-size:12px; }
-.accordion section:after{position:relative;font-size:18px;color:#000;font-weight:bold;}
-/*
-.accordion section:nth-child(1):after{content:'1';}
-.accordion section:nth-child(2):after{content:'2';}
-.accordion section:nth-child(3):after{content:'3';}
-.accordion section:nth-child(4):after{content:'4';}
-.accordion section:nth-child(5):after{content:'5';}
-*/
+.accordion section:hover {background:rgba(66, 67, 45, 0.3);}
+.accordion section li { display:none; font-size:14px; }
+.accordion section:after{position:relative;font-size:18px;color:#8fc400;font-weight:bold; content:'->';}
+
+
+
 /*End General Accordion****************************************************************************/
 
 /*Horizontal Accordion *********************************************************************/
@@ -52,7 +48,7 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 }
 
 /*Position the number of the slide*/
-/* .horizontal section:after{top:140px;left:15px;} */
+ .horizontal section:after{top:180px;left:5px;} 
 
 /*Header of closed slide*/
 .horizontal section h2 { 
@@ -61,7 +57,7 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 	-o-transform: rotate(90deg);
 	-ms-transform: rotate(90deg);
 	transform: rotate(90deg);
-	width:240px; position:relative; left:-105px; top:90px;
+	width:230px; position:relative; left:-105px; top:90px;
 } 
 
 /*On mouse over open slide*/
@@ -78,7 +74,7 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
 
 /*Vertical Accordion *************************************************************************/
-.vertical section{ width:100%; height:40px;
+.vertical section{ width:99.5%; height:40px;
 	-webkit-transition:height 0.2s ease-out;
 	-moz-transition:height 0.2s ease-out;
   	-o-transition:height 0.2s ease-out;
@@ -86,7 +82,7 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
   	transition:height 0.2s ease-out;
 }
 /*Set height of the slide*/
-.vertical :target{ height:250px; width:97%; }
+.vertical :target{ height:100%; width:96.5%; }
 
 .vertical section h2 { position:relative; left:0; top:-15px; }
 
